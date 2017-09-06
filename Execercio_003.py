@@ -1,22 +1,50 @@
-# Escreva um programa em Python que recebe como argumento um polinômio em notaçãoalgébrica e gera como saída a primeira derivada desse polinômio. Em seguida, calcule afunção T(n)  (modelo simplificado) e faça o estudo do seu desempenho em uma tabela e umgráfico.
+# Escreva um programa em Python que recebe como argumento um polinômio em notação
+# algébrica e gera como saída a primeira derivada desse polinômio. Em seguida, calcule a
+# função T(n) (modelo simplificado) e faça o estudo do seu desempenho em uma tabela e um
+# gráfico.
+def poli(lista):
+                aux = ""
+                derivada = ""
+                polinomio = "f(x) = "
+                for i in range(len(lista)):
+                        exp = len(lista) -  1 - i
 
-# class GenerationList(object):
+                        if(exp == 1):
+                                aux = aux + " %dx + " %lista[i]
+                                derivada = derivada + " %d  " %(lista[i] * exp)
 
-def poli(listA):
-	listC =[]
-	
-	for i in range(len(listA)):
-		for j in range(len(listB ) ):		 
-			listC.append(listA[i] * listB[j])
-		return listC
+                                
+                        elif(exp !=0 and (lista[i] !=0)):
+
+                                aux = aux + "%d" %lista[i] + "x ^ %d + " %exp
+                                if i == 0 :
+                                	expAux = exp -i -1
+                                else:
+                                	expAux = exp - i
+                                
+                                if expAux != 1 :
+                                	derivada = derivada + "%d" %(lista[i] * exp) + "x ^ %d + " %(expAux)
+                                else:
+                                	derivada = derivada + "%d" %(lista[i] * exp) + "x +"
+
+                        else:
+                        		if lista[i] !=0 :
+                        			aux = aux + "%d" %lista[i]
+                        			       
+                					
+                		#Tirar Primeira derivada
+
+                polinomio = polinomio + aux 
+                derivada = "der(x) = " + derivada
+                        
+                        
+                return polinomio,derivada
 
 
 
-sequence = [2,2,5,9]
-sequence2 = [3,2,4,2,6]
 
-print (listGeneration(sequence,sequence2))
+sequence = [1,3,1,0,5,4]
+teste = poli(sequence)
+print (teste[0]) # poli
+print (teste[1]) # der
 
-# obj = GenerationList()
-# obj.listGeneration(sequence,sequence2)
-       
