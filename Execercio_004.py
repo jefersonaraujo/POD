@@ -11,7 +11,7 @@ def poli(lista):
 
                         if(exp == 1):
                                 aux = aux + " %dx + " %lista[i]
-                                derivada = derivada + " %dx + " %(lista[i] * exp)
+                                derivada = derivada + " %d + " %(lista[i] * exp)
 
                                 
                         elif(exp !=0 and (lista[i] !=0)):
@@ -31,6 +31,7 @@ def poli(lista):
                 		#Tirar Primeira derivada
 
                 polinomio = polinomio + aux 
+                derivada = "der(x) = " + derivada
                         
                         
                 return polinomio,derivada
