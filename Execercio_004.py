@@ -11,7 +11,7 @@ def poli(lista):
 
                         if(exp == 1):
                                 aux = aux + " %dx + " %lista[i]
-                                derivada = derivada + " %d + " %(lista[i] * exp)
+                                derivada = derivada + " %d  " %(lista[i] * exp)
 
                                 
                         elif(exp !=0 and (lista[i] !=0)):
@@ -21,12 +21,16 @@ def poli(lista):
                                 	expAux = exp -i -1
                                 else:
                                 	expAux = exp - i
-                                	
-                                derivada = derivada + "%d" %(lista[i] * exp) + "x ^ %d + " %(expAux)
+                                
+                                if expAux != 1 :
+                                	derivada = derivada + "%d" %(lista[i] * exp) + "x ^ %d + " %(expAux)
+                                else:
+                                	derivada = derivada + "%d" %(lista[i] * exp) + "x +"
+
                         else:
                         		if lista[i] !=0 :
                         			aux = aux + "%d" %lista[i]
-                        			derivada = derivada + "%d" %(lista[i] * exp)       
+                        			       
                 					
                 		#Tirar Primeira derivada
 
@@ -39,7 +43,7 @@ def poli(lista):
 
 
 
-sequence = [1,3,0,0,5,4]
+sequence = [1,3,1,0,5,4]
 teste = poli(sequence)
 print (teste[0]) # poli
 print (teste[1]) # der
