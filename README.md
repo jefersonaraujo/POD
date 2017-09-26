@@ -103,9 +103,8 @@ Algoritmo: Seja x o vetor a ser ordenado e n o número de elementos de x. Seja a
 # ALGORITMO RADIX  
   Consiste em dividir os elementos do vetor a ser ordenado em baldes, ordenando primeiramente o conteúdo dos baldes, e depois agrupando   os elementos.
   
- Melhor caso, Complexidade Linear, O(n).
- 
- Pior caso, Quadrático,O(n²). 
+  - Melhor caso, Complexidade Linear, O(n). 
+  - Pior caso, Quadrático,O(n²). 
   
   
 
