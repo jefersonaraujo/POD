@@ -78,4 +78,27 @@ Para isso, o algoritmo Merge Sort divide a sequência original em pares de dados
       Merging  [2, 8]
       Merging  [2, 7, 8]
       Merging  [2, 4, 7, 8, 11, 13]
+      
+# ALGORITMO QUICK SORT
+
+Determina-se um elemento pivô. O pivô é posicionado dentro do vetor de tal forma que, todos à esquerda do pivô são menores que ele e, todos à direita do pivô são maiores. O pivô "divide" o vetor em dois subvetores.
+Recursivamente o quick sort é realizado na primeira metade do vetor e na segunda metade.
+
+Algoritmo: Seja x o vetor a ser ordenado e n o número de elementos de x. Seja a um elemento de x escolhido ao acaso (por exemplo, a=x[0]). Suponha que os elementos de x estão divididos de tal forma que a é colocado na posição j e as seguintes condições são verdadeiras:
+
+  >Todos os elementos nas posições de 0 a j-1 são menores que a.
+  
+  >Todos os elementos nas posições de j+1 a n-1 são maiores ou iguais a a.  
+  
+ # Execução:
+    sequence = [13,11,4,7,8,2]
+    quick_sort(sequence)
+    [2, 11, 4, 7, 8, 13]
+    [2, 11, 4, 7, 8, 13]
+    [2, 8, 4, 7, 11, 13]
+    [2, 7, 4, 8, 11, 13]
+    [2, 4, 7, 8, 11, 13]
+
+
+  
 
