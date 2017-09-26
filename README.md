@@ -106,6 +106,16 @@ Algoritmo: Seja x o vetor a ser ordenado e n o número de elementos de x. Seja a
   - Melhor caso, Complexidade Linear, O(n). 
   - Pior caso, Quadrático,O(n²). 
   
+ #### Vantagens:
+  - Não realiza comparações
+  - É estável, preserva a ordem de chaves iguais
+  - Tempo Linear 
+
+ #### Desvantagens:
+  - Precisa de mais memória para ordenar o conjunto
+  - O algoritmo se torna muito caro quando o vetor chave é muito extenso
+
+  
   
 
 
