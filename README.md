@@ -48,6 +48,8 @@ Combinar: Juntar as duas metades em um único conjunto já classificado.
 Para completar a ordenação do vetor original de n elementos, faz-se o merge ou a fusão dos sub-vetores já ordenados.
 A desvantagem do Merge Sort é que requer o dobro de memória, ou seja, precisa de um vetor com as mesmas dimensões do vetor que está sendo classificado.
 # Execução:
+    sequence = [13,11,4,7,8,2]
+    merge_sort(sequence)
 
       Splitting  [13, 11, 4, 7, 8, 2]
       Splitting  [13, 11, 4]
