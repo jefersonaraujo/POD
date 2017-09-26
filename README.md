@@ -41,7 +41,7 @@ Seu funcionamento é muito simples. O Algoritmo faz um loop (laço) pelos valore
 A idéia básica do Merge Sort é criar uma sequência ordenada a partir de duas outras também ordenadas.
 Para isso, o algoritmo Merge Sort divide a sequência original em pares de dados, agrupa estes pares na ordem desejada; depois as agrupa as sequências de pares já ordenados, formando uma nova sequência ordenada de quatro elementos, e assim por diante, até ter toda a sequência ordenada.
 
-###### Algoritmo:
+##### Algoritmo:
   Os três passos úteis dos algoritmos dividir-para-conquistar, que se aplicam ao Merge Sort são:
   Dividir: Dividir os dados em subsequências pequenas;
   Este passo é realizado recursivamente, iniciando com a divisão do vetor de n elementos em duas metades, cada uma das metades é           novamente dividida em duas novas metades e assim por diante, até que não seja mais possível a divisão (ou seja, sobrem n vetores com     um elemento cada).
