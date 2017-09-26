@@ -35,7 +35,7 @@ def partition(alist,first,last):
    temp = alist[first]
    alist[first] = alist[rightmark]
    alist[rightmark] = temp
-   print(alist)
+   prin(alist)
 
 
    return rightmark
