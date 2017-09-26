@@ -38,15 +38,19 @@ Seu funcionamento é muito simples. O Algoritmo faz um loop (laço) pelos valore
 
 # ALGORITMO MERGE SORT
 
-A idéia básica do Merge Sort é criar uma sequência ordenada a partir de duas outras também ordenadas. Para isso, o algoritmo Merge Sort divide a sequência original em pares de dados, agrupa estes pares na ordem desejada; depois as agrupa as sequências de pares já ordenados, formando uma nova sequência ordenada de quatro elementos, e assim por diante, até ter toda a sequência ordenada.
+A idéia básica do Merge Sort é criar uma sequência ordenada a partir de duas outras também ordenadas.
+Para isso, o algoritmo Merge Sort divide a sequência original em pares de dados, agrupa estes pares na ordem desejada; depois as agrupa as sequências de pares já ordenados, formando uma nova sequência ordenada de quatro elementos, e assim por diante, até ter toda a sequência ordenada.
 Algoritmo:
-Os três passos úteis dos algoritmos dividir-para-conquistar, que se aplicam ao Merge Sort são:
+  Os três passos úteis dos algoritmos dividir-para-conquistar, que se aplicam ao Merge Sort são:
   Dividir: Dividir os dados em subsequências pequenas;
-  Este passo é realizado recursivamente, iniciando com a divisão do vetor de n elementos em duas metades, cada uma das metades é       novamente dividida em duas novas metades e assim por diante, até que não seja mais possível a divisão (ou seja, sobrem n vetores com um elemento cada).
-Conquistar: Classificar as duas metades recursivamente aplicando o merge sort;
-Combinar: Juntar as duas metades em um único conjunto já classificado.
-Para completar a ordenação do vetor original de n elementos, faz-se o merge ou a fusão dos sub-vetores já ordenados.
-A desvantagem do Merge Sort é que requer o dobro de memória, ou seja, precisa de um vetor com as mesmas dimensões do vetor que está sendo classificado.
+  Este passo é realizado recursivamente, iniciando com a divisão do vetor de n elementos em duas metades, cada uma das metades é           novamente dividida em duas novas metades e assim por diante, até que não seja mais possível a divisão (ou seja, sobrem n vetores com     um elemento cada).
+  
+  Conquistar: Classificar as duas metades recursivamente aplicando o merge sort;
+
+  Combinar: Juntar as duas metades em um único conjunto já classificado.
+
+  Para completar a ordenação do vetor original de n elementos, faz-se o merge ou a fusão dos sub-vetores já ordenados.
+  A desvantagem do Merge Sort é que requer o dobro de memória, ou seja, precisa de um vetor com as mesmas dimensões do vetor que está     sendo classificado.
 # Execução:
     sequence = [13,11,4,7,8,2]
     merge_sort(sequence)
