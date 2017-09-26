@@ -35,10 +35,10 @@ def partition(alist,first,last):
    temp = alist[first]
    alist[first] = alist[rightmark]
    alist[rightmark] = temp
+   print(alist)
 
 
    return rightmark
 
-alist = [54,26,93,17,77,31,44,55,20]
-quickSort(alist)
-print(alist)
+sequence = [13,11,4,7,8,2]
+quickSort(sequence)

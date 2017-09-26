@@ -4,10 +4,10 @@ def mergeSort(alist):
     mid = len(alist)//2
     lefthalf = alist[:mid]
     righthalf = alist[mid:]
-    
+
     mergeSort(lefthalf)
     mergeSort(righthalf)
-    
+
     i=0
     j=0
     k=0
@@ -19,17 +19,17 @@ def mergeSort(alist):
         alist[k]=righthalf[j]
         j=j+1
       k=k+1
-      
+
     while i < len(lefthalf):
       alist[k]=lefthalf[i]
       i=i+1
       k=k+1
-      
+
     while j < len(righthalf):
       alist[k]=righthalf[j]
       j=j+1
       k=k+1
   print("Merging ",alist)
-  
-sequence = [7,9,5,2,4,1]
+
+sequence = [13,11,4,7,8,2]
 mergeSort(sequence)
