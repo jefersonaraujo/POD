@@ -29,7 +29,7 @@ def mergeSort(alist):
       alist[k]=righthalf[j]
       j=j+1
       k=k+1
-  print("Merging ",alist)
+  print("Merging :",alist)
 
 sequence = [13,11,4,7,8,2]
 mergeSort(sequence)
