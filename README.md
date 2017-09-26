@@ -117,5 +117,5 @@ Algoritmo: Seja x o vetor a ser ordenado e n o número de elementos de x. Seja a
 
   
   
-
-
+# EXECERCIO 001
+##### 1.Escreva uma função em Python que reverte a ordem de uma lista de n inteiros. Em seguida,calcule a função T(n)  (modelo simplificado) e faça o estudo comparativo em uma tabela egráfico do desempenho de sua função versus o método nativo fornecido pela linguagem.
