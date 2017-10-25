@@ -93,8 +93,11 @@ def getList():
 
 def getFind(nome):
 
-    nome = H[nome]
-    print(nome)
+    found = H[nome]
+    if found is None:
+        print("Registro Não Encontrado")
+    else:
+        print("Registro Encontrado : ", nome," sua altura é ", H[nome])
 
 
 def menu():
@@ -114,8 +117,8 @@ def menu():
         elif opcao == 2:
             getList()
         elif opcao == 3:
-            # nome = str(input("Informe o Nome para Busca:"))
-            # getFind(nome)
+            nome = str(input("Informe o Nome para Busca:"))
+            getFind(nome)
         else:
             contexto = False
 
