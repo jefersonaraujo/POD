@@ -14,6 +14,7 @@ class HashMap(object):
         hash = 0
         for char in str(key):
             hash += ord(char)
+
         return hash % self.size
         #return key%self.size
 
@@ -81,6 +82,10 @@ H=HashMap(10)
 print(H.slots)
 
 H["Joao"]="1.72"
+H["Alfredo"]="1.80"
+H["Jeferson"]="1.68"
 print(H.slots)
 print(H.data)
-print(H["Joao"])
+print("A altura de Joao %s e", H["Joao"])
+print("A altura de Alfredo %s e", H["Joao"])
+print("A altura de Jeferson %s e", H["Joao"])
