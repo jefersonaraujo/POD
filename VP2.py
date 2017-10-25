@@ -1,4 +1,5 @@
 
+
 class HashMap(object):
     def __init__(self, size):
         self.size = size
@@ -10,7 +11,13 @@ class HashMap(object):
             self.data.append([])
 
     def hashfunction(self,key):
-        return key%self.size
+        hash = 0
+        for char in str(key):
+            hash += ord(char)
+        return hash % self.size
+        #return key%self.size
+
+
 
     def _find(self, key):
         hashvalue = self.hashfunction(key)
@@ -71,9 +78,9 @@ class HashMap(object):
 
 
 H=HashMap(10)
-H[31]="Joao"
-H[20]="Rico"
-H[1]="Amanda"
+print(H.slots)
+
+H["Joao"]="1.72"
 print(H.slots)
 print(H.data)
-print(H[31])
+print(H["Joao"])
