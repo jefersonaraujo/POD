@@ -93,15 +93,12 @@ class HashMap(object):
             self.data[hashvalue][index] = data
 
 
-def gera_nome():
-        caracters = 'abcdefghijlmnopqrstuwvxz'
-        senha = ''
-        for char in xrange(tamanho):
-                senha += choice(caracters)
-        return  senha
+
 
 # print (gera_senha())
-print(gera_nome())
+user = generationName()
+print(user[0])
+print(user[1])
 
 
 H=HashMap(10)
