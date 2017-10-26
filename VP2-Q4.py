@@ -93,16 +93,29 @@ class HashMap(object):
             self.data[hashvalue][index] = data
 
 
-
+def around(x): #limita digitos a duas casas decimais
+    return round(x,2)
 
 # print (gera_senha())
-user = generationName()
-print(user[0])
-print(user[1])
-
-
 H=HashMap(10)
+qtd = int(input("Quantos Regitros Aleatorios ?  :"))
+
+for i in range(qtd):
+    user = generationName()
+    nome = user[0]
+    altura = user[1]
+    altura  = around(altura)
+    H[nome]=altura
+    # print(nome)
+    # print(altura)
+
+
+
+
+
+
 print(H.slots)
+print(H.data)
 
 # H["Joao"]="1.72"
 # H["Alfredo"]="1.80"
