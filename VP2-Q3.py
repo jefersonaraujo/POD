@@ -34,6 +34,10 @@ class HashMap(object):
 
         return found, index
 
+    def contains(self,key):
+        found, index = self.find(key)
+        return found
+
     def remove(self, key):
         result = None
         hashvalue = self.hashfunction(key)
