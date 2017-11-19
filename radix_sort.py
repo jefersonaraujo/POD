@@ -27,5 +27,7 @@ def radix_sort(items, base):
 		j = j + 1
 
 
-lista = [223,456,123,789,113]
+lista = [9, 8, 2, 1, 6, 5]
+#Base se for : [10,02,20] é decimal, então a base deve ser 10.
+#Base se for :[1000,0010,1111] é binaria, então a base dever ser 2.
 radix_sort(lista,10)
