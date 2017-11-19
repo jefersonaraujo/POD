@@ -19,7 +19,9 @@ class BinHeap:
 
     def delMin(self):
       retval = self.heapList[1]
+      print(self.heapList[1])
       self.heapList[1] = self.heapList[self.currentSize]
+      print(self.heapList[self.currentSize])
       self.currentSize = self.currentSize - 1
       self.heapList.pop()
       self.percDown(1)
@@ -63,7 +65,7 @@ class BinHeap:
     def buildHeap(self,alist):
       i = len(alist) // 2
 
-      vart= "[0 , 1 , 2 , 3 , 4, 5,  6,  7,  8, 9, 10]"
+     
       self.currentSize = len(alist)
       self.heapList = [0] + alist[:]
       while (i > 0):
@@ -71,7 +73,7 @@ class BinHeap:
           self.percDown(i)
           i = i - 1
           print(self.heapList)
-          print(vart)
+          
           print("*************************************************")
 
 
@@ -79,7 +81,7 @@ class BinHeap:
         return self.heapList
 
 bh = BinHeap()
-bh.buildHeap([27, 30, 31, 12, 12, 34, 1, 6, 9])
+bh.buildHeap([9, 8, 2, 1, 6, 5])
 
 #print(bh.toString())
 
