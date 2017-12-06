@@ -12,7 +12,9 @@ class GreedSolver(object):
         do = []
         for i in activities:
             for j in activities:
-                print(i,j)
+                # si ≥ fj ou sj ≥ fi.
+                if i.initial >= j.end or j.initial >= i.end :
+                    print(i)
 
 
 
@@ -33,7 +35,7 @@ class GreedSolver(object):
 
 
 if __name__ == '__main__':
-    ativ = [Activity("Estudar", 1,2),Activity("Praticar Sport", 2,4),Activity("Namorar", 8,12)]
+    ativ = [Activity("Estudar", 1,2),Activity("Praticar Sport", 1,2),Activity("Namorar", 8,12)]
     solver = GreedSolver()
     shelf = solver.solve(ativ)
     # for act in shelf:
