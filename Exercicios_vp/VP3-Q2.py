@@ -13,9 +13,14 @@ class GreedSolver(object):
         for i in activities:
             for j in activities:
                 # si ≥ fj ou sj ≥ fi.
-                if i.initial >= j.end or j.initial >= i.end :
+                if i.initial >= j.end:
                     print(i)
+                    if i in do == False:
+                        do.append(i)
 
+        #print(do)
+        for act in do:
+            print(act)
 
 
 
@@ -30,7 +35,7 @@ class GreedSolver(object):
 
 
 
-        # return result
+        return do
 
 
 
