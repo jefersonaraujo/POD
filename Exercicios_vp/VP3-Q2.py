@@ -14,8 +14,8 @@ class GreedSolver(object):
             for j in activities:
                 # si ≥ fj ou sj ≥ fi.
                 if i.initial >= j.end:
-                    print(i)
-                    if i in do == False:
+                    #print(i)
+                    if i not in do:
                         do.append(i)
 
         #print(do)
