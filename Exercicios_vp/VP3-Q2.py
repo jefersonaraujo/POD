@@ -18,18 +18,6 @@ class GreedSolver(object):
                     if i not in do:
                         do.append(i)
 
-        #print(do)
-        for act in do:
-            print(act)
-
-
-
-        # do = []
-        # do = activities
-        # for song in self.do:
-        #     result += song.initial
-
-
 
 
 
@@ -40,8 +28,8 @@ class GreedSolver(object):
 
 
 if __name__ == '__main__':
-    ativ = [Activity("Estudar", 1,2),Activity("Praticar Sport", 1,2),Activity("Namorar", 8,12)]
+    ativ = [Activity("Estudar", 1,2),Activity("Praticar Sport", 1,2),Activity("Namorar", 8,12),Activity("Trabalhar", 14,18)]
     solver = GreedSolver()
     shelf = solver.solve(ativ)
-    # for act in shelf:
-    #     print(act)
+    for act in shelf:
+        print(act)
