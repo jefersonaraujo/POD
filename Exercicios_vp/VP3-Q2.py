@@ -10,16 +10,31 @@ class Activity(object):
 class GreedSolver(object):
     def solve(self, activities):
         do = []
+        for i in activities:
+            for j in activities:
+                print(i,j)
+
+
+
+
+        # do = []
+        # do = activities
+        # for song in self.do:
+        #     result += song.initial
 
 
 
 
 
-        return do
+
+
+        # return result
 
 
 
 if __name__ == '__main__':
     ativ = [Activity("Estudar", 1,2),Activity("Praticar Sport", 2,4),Activity("Namorar", 8,12)]
-    for act in ativ:
-        print(act)
+    solver = GreedSolver()
+    shelf = solver.solve(ativ)
+    # for act in shelf:
+    #     print(act)
