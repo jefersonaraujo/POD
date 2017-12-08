@@ -33,3 +33,8 @@ if __name__ == '__main__':
     shelf = solver.solve(ativ)
     for act in shelf:
         print(act)
+
+        
+#task = [['a1',2,3],['a7',1,4],['a2',2,5]]
+#tasks = sorted(task, key=lambda task: task[1])
+#print(tasks)
